@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FZCO - Izdihar Babylon</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img\logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+<style>
+
+
+.search-button {
+    background-color: 0;
+    color: black;
+}
+
+.search-bar {
+    padding: 2px;
+    font-size: 16px;
+    border: none;
+    border-radius: 0;
+    margin-right: 0;
+}
+.search-button:hover {
+    background-color: blue; /* Darker blue on hover */
+}
+  /* Responsive adjustments */
+.icon-box h3 {
+    font-size: 16px; /* Font size for text */
+    margin: 0; 
+
+    position: absolute;
+    font-family: "Open Sans-SemiBold", Helvetica, Arial, sans-serif; /* Font family with bold weight */
+    font-weight: 600; 
+}
+.commercial-brokers {
+    color: black;
+    top:170px;
+
+}
+.management-consultancies {
+    color: black;
+    top:170px;
+}
+
+.food-beverages {
+    color: black;
+    top:170px;
+}
+
+.construction-materials {
+    color: black;
+    top:170px;
+}
+
+.educational-services {
+    color: black;
+    top:170px;
+}
+@media (max-width: 1200px){
+        #home {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    height: 58vh;
+    overflow: hidden;
+    
+}
+}
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #home {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    height: 58vh;
+    overflow: hidden;
+}
+.icon-box h3 {
+    font-size: 16px; /* Font size for text */
+    margin: 0; 
+    top:0px;
+    position: relative;
+    font-family: "Open Sans-SemiBold", Helvetica, Arial, sans-serif; /* Font family with bold weight */
+    font-weight: 600; 
+}
+
+#home {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    height: 55vh;
+    overflow: hidden;
+}
+    .company-name {
+        font-size: 18px;
+    }
+    .carousel-caption {
+        position: static;
+        left: auto;
+        bottom: auto;
+        background: rgba(0, 0, 0, 0.5);
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        text-align: center;
+        width: auto;
+    }
+
+    .contact-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact-info.left,
+    .contact-info.right {
+        top: auto;
+        left: auto;
+        right: auto;
+        bottom: auto;
+        text-align: center;
+    }
+
+    .about-us-image {
+        width: 100%;
+        text-align: center;
+    }
+
+    .about-us-text {
+        padding: 0;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .icon-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .icon-box {
+        width: 80px;
+        height: 80px;
+    }
+
+    .icon-box i {
+        font-size: 30px;
+    }
+
+    .icon-box h3 {
+        font-size: 14px;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .achievement-box {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+    .header {
+        flex-wrap: wrap;
+        padding: 10px 0;
+    }
+
+    .header-left, .header-right {
+        flex: 1 1 auto;
+        justify-content: center;
+    }
+
+    .company-name {
+        font-size: 20px;
+    }
+
+    .nav-links {
+        flex: 1 1 100%;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .nav-links li {
+        margin: 0 5px;
+    }
+    
+}
+
+@media (max-width: 480px) {
+  
+   .nav-links {
+        flex: 1 1 100%;
+        justify-content: center;
+        margin-top: 12px;
+        margin-left: 48px;
+    }  
+     .search-bar, .search-button {
+        display: none;
+    }
+  /* Responsive adjustments */
+.icon-box h3 {
+    font-size: 16px; /* Font size for text */
+    margin: 0; 
+    top:0px;
+    position: relative;
+    font-family: "Open Sans-SemiBold", Helvetica, Arial, sans-serif; /* Font family with bold weight */
+    font-weight: 600; 
+}
+
+#home {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    height: 55vh;
+    overflow: hidden;
+}
+    .company-name {
+        font-size: 18px;
+    }
+.carousel-caption {
+        position: static;
+        left: auto;
+        bottom: auto;
+        background: rgba(0, 0, 0, 0.5);
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        text-align: center;
+        width: auto;
+    }
+
+    .contact-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact-info.left,
+    .contact-info.right {
+        top: auto;
+        left: auto;
+        right: auto;
+        bottom: auto;
+        text-align: center;
+    }
+
+    .about-us-image {
+        width: 100%;
+        text-align: center;
+    }
+
+    .about-us-text {
+        padding: 0;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+       .icon-container {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .icon-box {
+        width: 60px;
+        height: 60px;
+    }
+
+    .icon-box i {
+        font-size: 24px;
+    }
+
+    .icon-box h3 {
+        font-size: 12px;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .achievement-box {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .contact-info h2 {
+        font-size: 1.5rem;
+    }
+
+    .contact-details {
+        margin: 10px 0;
+    }
+    .nav-links a {
+        font-size: 16px;
+    }
+
+    .header {
+        padding: 5px 0;
+    }
+    .about-us-image img {
+    width: 0;
+    height: auto;
+    border-radius: 8px;
+}
+.heading-white {
+    color: white;
+    font-size: 24px;
+}
+ 
+ .heading-blue {
+    
+    font-size: 24px;
+}
+ 
+ .responsive-image {
+    width: 0%;
+    height: 0;
+}
+.blog-content {
+    font-size: 14px;
+    color: #666;
+    margin: 0px;
+    font-size: 13px;
+}
+.blog-title {
+    font-size: 19px;
+    color: black;
+    margin: 1px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+}
+    
+}
+</style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-left">
+            <img src="img\logo.png" alt="Company Logo" class="logo">
+            <span class="company-name">FZCO - Izdihar Babylon</span>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services ↓</a></li>
+                <li><a href="about.html">About Us ↓</a></li>
+                <li><a href="#contact-us">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="header-right">
+       <input type="text" placeholder="Search..." class="search-bar" id="search-bar">
+<button class="search-button" id="search-button">
+    <i class="fas fa-search"></i>
+</button>
+
+        </div>
+    </header>
+    <main>
+        <section id="home" class="section">
+            <div id="carouselFade" class="carousel slide carousel-fade" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="img\image 3 (1).svg" alt="First slide">
+                        <div class="carousel-caption">
+                            <h3>Your Gateway to Comprehensive Business Solutions</h3>
+                            <p>Expertise in Brokerage, Consultancy, Trading, and Education</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="img\slideshow2.jpg" alt="Second slide">
+                        <div class="carousel-caption">
+                            <h3>Your Gateway to Comprehensive Business Solutions</h3>
+                            <p>Expertise in Brokerage, Consultancy, Trading, and Education</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="img\slide.jpg" alt="Third slide">
+                        <div class="carousel-caption">
+                            <h3>Your Gateway to Comprehensive Business Solutions</h3>
+                            <p>Expertise in Brokerage, Consultancy, Trading, and Education</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="img\slide2.jpeg" alt="Third slide">
+                        <div class="carousel-caption">
+                            <h3>Your Gateway to Comprehensive Business Solutions</h3>
+                            <p>Expertise in Brokerage, Consultancy, Trading, and Education</p>
+                        </div>
+                    </div>
+                </div>
+                <a class="left carousel-control" href="#carouselFade" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#carouselFade" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </section>
+        
+        <section id="icons" class="section">
+          <div class="icon-container">
+    <div class="icon-box">
+        <i class="fas fa-building"></i>
+        <h3 class="commercial-brokers">Commercial Brokers</h3>
+    </div>
+    <div class="icon-box">
+        <i class="fas fa-briefcase"></i>
+        <h3 class="management-consultancies">Management Consultancies</h3>
+    </div>
+    <div class="icon-box">
+        <i class="fas fa-utensils"></i>
+        <h3 class="food-beverages">Food & Beverages</h3>
+    </div>
+    <div class="icon-box">
+        <i class="fas fa-hard-hat"></i>
+        <h3 class="construction-materials">Construction Materials Trading</h3>
+    </div>
+    <div class="icon-box">
+        <i class="fas fa-graduation-cap"></i>
+        <h3 class="educational-services">Educational Services</h3>
+    </div>
+</div>
+        </section>
+
+
+        <section id="about-us" class="section">
+            <div class="about-us-image">
+                <img src="img\Component 13.svg" alt="About Us Image">
+            </div>
+            <div class="about-us-text">
+                <h2>About Our Company</h2>
+                <p>At Izdihar Babylon, we are not just an educational platform; we are a dynamic community where aspirations take flight and are realized daily. We see education as a continuous journey, a collective adventure that enhances not only each person but also the world at large. It's not just about gaining knowledge; it's about growth, transformation, and leaving a meaningful mark. At Izdihar we dare to dream</p>
+                <ul class="services-list">
+                    <li><i class="fas fa-check-circle"></i> <strong>Commercial Brokerage:</strong> Facilitate seamless transactions using our extensive network.</li>
+                    <li><i class="fas fa-check-circle"></i> <strong>Management Consultancies:</strong> Provide strategic advice and solutions to improve business operations.</li>
+                    <li><i class="fas fa-check-circle"></i> <strong>Food & Beverages Trading:</strong> Ensure high-quality products with Dubai Municipality standards.</li>
+                    <li><i class="fas fa-check-circle"></i> <strong>Building and Construction Materials Trading:</strong> Offer reliable and competitively priced construction materials.</li>
+                    <li><i class="fas fa-check-circle"></i> <strong>Educational Services:</strong> Empower through professional development courses.</li>
+                </ul>
+                 <a href="about.html"><button class="read-more">Read More</button></a>
+            </div>
+        </section>
+        
+        <section id="achievements" class="section">
+            <div class="heading">
+                <h2 class="heading-white">Empowering Businesses through</h2>
+                <h2 class="heading-blue">Expertise and Unwavering commitment</h2>
+            </div>
+
+            <div class="container">
+                <div class="achievement-box" data-number="40000">
+                    <h3 class="achievement-number">0</h3>
+                    <p>Happy Customers</p>
+                </div>
+                <div class="achievement-box" data-number="20">
+                    <h3 class="achievement-number">0</h3>
+                    <p>Years of Experience</p>
+                </div>
+                <div class="achievement-box" data-number="120">
+                    <h3 class="achievement-number">0</h3>
+                    <p>Expert Consultants</p>
+                </div>
+               
+           
+            </div>
+            <img src="img/image 8.svg" alt="Achievement Image" class="achievement-image"> 
+        </section>
+        
+        
+        <section id="services" class="services-section">
+            <h2 class="services-heading">Our Services</h2>
+            <p class="services-subheading">Developing solutions for the future</p>
+            <div class="services-container">
+                <div class="service-box">
+                    <i class="fas fa-building service-icon"></i>
+                    <h3>Commercial Brokers</h3>
+                    <p>Facilitate seamless transactions using our extensive network.</p>
+                    <a href="services.html" class="service-button">Learn More</a>
+                </div>
+                <div class="service-box">
+                    <i class="fas fa-briefcase service-icon"></i>
+                    <h3>Management Consultancies</h3>
+                    <p>Provide strategic advice and solutions to improve business operations.</p>
+                    <a href="services.html" class="service-button">Learn More</a>
+                </div>
+                <div class="service-box">
+                    <i class="fas fa-utensils service-icon"></i>
+                    <h3>Food & Beverages</h3>
+                    <p>Ensure high-quality products with Dubai Municipality standards.</p>
+                    <a href="services.html" class="service-button">Learn More</a>
+                </div>
+                <div class="service-box">
+                    <i class="fas fa-hard-hat service-icon"></i>
+                    <h3>Building & Construction Materials Trading</h3>
+                    <p>Offer reliable and competitively priced construction materials.</p>
+                    <a href="services.html" class="service-button">Learn More</a>
+                </div>
+                <div class="service-box">
+                    <i class="fas fa-graduation-cap service-icon"></i>
+                    <h3>Educational Services</h3>
+                    <p>Empower through professional development courses.</p>
+                    <a href="services.html" class="service-button">Learn More</a>
+                </div>
+            </div>
+        </section>
+        <img src="img\Component 14.svg" alt="Responsive Image" class="responsive-image">
+        
+        
+
+
+        <section id="news" class="section">
+            <div class="news-heading">
+                <h1 class="news-title">News & Blogs</h1>
+                <h2 class="news-subtitle">Our Latest News and Blogs</h2>
+            </div>
+            
+            <div class="news-container">
+                <div class="blog-post">
+                    <img src="img/blog1.svg" alt="Blog 1" class="blog-image">
+                    <h3 class="blog-title">Innovations in Technology</h3>
+                    <p class="blog-content">Discover the latest trends in technology and how they are shaping the future. From artificial intelligence to blockchain, explore how innovations are driving change.</p>
+                    <p class="blog-date">August 3, 2024</p>
+                </div>
+                
+                <div class="blog-post">
+                    <img src="img/blog2.svg" alt="Blog 2" class="blog-image">
+                    <h3 class="blog-title">Sustainable Business Practices</h3>
+                    <p class="blog-content">Learn about the importance of sustainability in business operations. Find out how companies are implementing eco-friendly practices and the benefits they offer.</p>
+                    <p class="blog-date">August 2, 2024</p>
+                </div>
+                
+                <div class="blog-post">
+                    <img src="img/blog3.svg" alt="Blog 3" class="blog-image">
+                    <h3 class="blog-title">The Future of Remote Work</h3>
+                    <p class="blog-content">Explore the evolving landscape of remote work. Understand the challenges and opportunities presented by this new working environment and how businesses can adapt.</p>
+                    <p class="blog-date">August 1, 2024</p>
+                </div>
+            </div>
+            
+        </section>
+        
+        
+        <section id="contact-us" class="section">
+             
+                    <div class="row g-5">
+                        <div class="col-lg-3 col-md-6">
+                            <h4 class="text-white mb-4">Our Office</h4>
+                            <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i> DSO-IFZA , IFZA Properties , Dubai Silicon Oasis</p>
+                            <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
+                            <p class="mb-2"><i class="fa fa-envelope me-3"></i> contact@izdiharbabylon.com</p>
+                            <div class="d-flex pt-2">
+                                <a class="btn btn-square btn-outline-light rounded-circle me-2" href="https://www.instagram.com/campusbaobab/"><i class="fab fa-instagram"></i></a>
+                                <a class="btn btn-square btn-outline-light rounded-circle me-2" href="https://www.facebook.com/profile.php?id=61555932055301"><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square btn-outline-light rounded-circle me-2" href="https://www.linkedin.com/company/baobab-campus/"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                           
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <h4 class="text-white mb-4">Newsletter</h4>
+                            <p>Stay updated with our latest news and exclusive offers.</p>
+                            <div class="position-relative w-100">
+                                <input class="form-control bg-white border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                                <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                            </div>
+                        </div>
+                    </div>
+             
+        </section>
+        
+        
+        
+    
+    </main>
+    <footer class="footer">
+        <p>Copyright @2024 FZCO. All Rights Reserved</p>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const sections = document.querySelectorAll('.section');
+        
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    } else {
+                        entry.target.classList.remove('visible');
+                    }
+                });
+            }, {
+                threshold: 0.1
+            });
+        
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+        });
+        
+    </script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+<script>
+    $('#carouselFade').carousel();
+</script>
+<script>
+document.getElementById('search-button').addEventListener('click', function() {
+    const query = document.getElementById('search-bar').value;
+    if(query) {
+        alert('Searching for: ' + query);
+        // Add your search functionality here
+    } else {
+        alert('Please enter a search query.');
+    }
+});
+
+document.getElementById('report-issue-button').addEventListener('click', function() {
+    alert('Redirecting to the issue report form.');
+    // Add your report issue functionality here
+});
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const boxes = document.querySelectorAll('.achievement-box');
+        
+        function countUp() {
+            boxes.forEach(box => {
+                const numberElement = box.querySelector('.achievement-number');
+                const targetNumber = parseInt(box.getAttribute('data-number'));
+                let currentNumber = 0;
+                const increment = targetNumber / 100;
+                const duration = 2000; // Animation duration in milliseconds
+                const stepTime = Math.abs(Math.floor(duration / targetNumber));
+
+                const interval = setInterval(() => {
+                    currentNumber += increment;
+                    if (currentNumber >= targetNumber) {
+                        numberElement.textContent = targetNumber.toLocaleString();
+                        clearInterval(interval);
+                    } else {
+                        numberElement.textContent = Math.floor(currentNumber).toLocaleString();
+                    }
+                }, stepTime);
+            });
+        }
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    countUp();
+                    observer.unobserve(entry.target); // Stop observing after animation starts
+                }
+            });
+        }, {
+            threshold: 0.5 // Trigger when at least 50% of the element is visible
+        });
+
+        boxes.forEach(box => {
+            observer.observe(box);
+        });
+    });
+</script>
+<script>
+// Function to handle the search
+function handleSearch() {
+    var query = document.getElementById('search-bar').value.toLowerCase();
+    
+    // Define the keyword to page mapping
+    var pages = {
+        'about': 'about.html',
+        'commercial': 'commercial.html',
+        'property': 'commercial.html',
+        'construction': 'construction.html',
+        'materials': 'construction.html',
+        'data': 'data.html',
+        'ai': 'data.html',
+        'education': 'education.html',
+        'training': 'education.html',
+        'food': 'food.html',
+        'beverages': 'food.html',
+        'home': 'index.html',
+        'management': 'management.html',
+        'consultancy': 'management.html',
+        'services': 'services.html'
+    };
+    
+    // Check if the query matches any of the keywords
+    for (var keyword in pages) {
+        if (query.includes(keyword)) {
+            window.location.href = pages[keyword];
+            return;
+        }
+    }
+    
+    // If no match is found, show an alert or handle accordingly
+    alert('No matching page found. Please try a different keyword.');
+}
+
+// Event listener for the search icon click
+document.getElementById('search-button').addEventListener('click', handleSearch);
+
+// Event listener for the Enter key press
+document.getElementById('search-bar').addEventListener('keydown', function(event) {
+    if (event.key === 'Enter') {
+        handleSearch();
+    }
+});
+
+</script>
+ 
+</body>
+</html>
